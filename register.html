@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register for Event</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <h1 class="logo">Bean Boutique</h1>
+        <nav class="navbarSection">
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li class="storeMenu">
+                    <a href="Store.html">Store</a>
+                    <ul class="submenu">
+                        <li><a href="CoffeeSelection.html">Coffee Selection</a></li>
+                        <li><a href="Equipments.html">Equipment</a></li>
+                    </ul>
+                </li>
+                <li><a href="event.html">Events</a></li>
+                <li><a href="specialoffers.html">Special Offers and Subscriptions</a></li>
+                <li><a href="realcart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main class="register-page-content">
+        <div class="register-form-container">
+            <h2>Register for Event</h2>
+            <form id="eventRegisterForm">
+                <div class="form-group">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="eventSelect">Select Event:</label>
+                    <select id="eventSelect" name="eventSelect" required>
+                        <option value="">-- Please select an event --</option>
+                        <option value="How to filter your coffee">How to filter your coffee</option>
+                        <option value="Perfect your skill">Perfect your skill</option>
+                        <option value="Perfect Your Space">Perfect Your Space</option>
+                        <option value="Master Your Equipments">Master Your Equipments</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-register-button">Register Now</button>
+            </form>
+        </div>
+    </main>
+
+   <footer>
+        <div class="footerContainer">
+            <div class="footerSection">
+                <h4>Get in touch</h4>
+
+                <ul>
+                    <li>YourCoffee@gmail.com</li>
+                    <li>YourCoffeeService@gmail.com</li>
+                    <li>YourCoffeeBusiness@gmail.com</li>
+                </ul>
+            </div>
+            <div class="footerSection">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><a href="#"><i class="bi bi-facebook"></i><span class="span">Facebook</span></a></li>
+                    <li><a href="#"><i class="bi bi-telegram"></i><span class="span">Google</span></a></li>
+                    <li><a href="#"><i class="bi bi-whatsapp"></i><span class="span">Twitter</span></a></li>
+                    <li><a href="#"><i class="bi bi-line"></i><span class="span">What'up</span></a></li>
+                </ul>
+            </div>
+            <div class="footerSection">
+                <h4>Address</h4>
+                <ul>
+                    <li><a href="#">Mandalay</a></li>
+                    <li><a href="#">Yangon</a></li>
+                    <li><a href="#">Pyi Oo Lwin</a></li>
+                    <li><a href="#">Taunggyi</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- START: Success Message Modal HTML Structure -->
+    <div class="success-modal-overlay" id="successModalOverlay">
+        <div class="success-modal-content">
+            <span class="close-success-modal-button">&times;</span>
+            <div class="success-icon">
+                <i class="bi bi-check-circle-fill"></i>
+            </div>
+            <h2>Registration Successful!</h2>
+            <p>Thank you for registering for the event. We look forward to seeing you!</p>
+            <button class="close-success-button">Close</button>
+        </div>
+    </div>
+    <!-- END: Success Message Modal HTML Structure -->
+
+    <script src="JS/java.js"></script>
+</body>
+</html>

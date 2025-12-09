@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Selection</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body>
+
+    <div class="navbar">
+        <h1 class="logo">Bean Boutique</h1>
+        <nav class="navbarSection">
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li class="storeMenu">
+                    <a href="Store.html">Store</a>
+                    <ul class="submenu">
+                        <li><a href="CoffeeSelection.html">Coffee Selection</a></li>
+                        <li><a href="Equipments.html">Equipment</a></li>
+                    </ul>
+                </li>
+                <li><a href="event.html">Events</a></li>
+                <li><a href="specialoffers.html">Special Offers and Subscriptions</a></li>
+                <li><a href="realcart.html">Cart</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+        <input type="text" class="search-bar" id="search-input" placeholder="">
+        <script>
+            var typed = new Typed('#search-input', {
+                strings: ['Search', 'Coffee', 'Bean', 'Brew'],
+                typeSpeed: 50,
+                backSpeed: 50,
+            });
+        </script>
+    </div>
+    </div>
+    
+
+    <h1 class="toProducts"><a href="CoffeeSelection.html">Coffee</a></h1>
+    <div class="menuGrid">
+        <div class="smallCard">
+            <div class="img"><img src="../Real_Assignment/Images/product-1.jpg" alt="Cappuccino"></div>
+            <div class="UndersmallCard">
+                <h2>Cappuccino</h2>
+            </div>
+            <div class="priceAndAddToCart">
+                <div class="price">
+                    <h3>$4.50</h3>
+                </div>
+                <button class="addToCart"
+                    data-id="coffee-cappuccino"
+                    data-name="Cappuccino"
+                    data-price="4.50"
+                    data-image="../Real_Assignment/Images/product-1.jpg">
+                    <i class="bi bi-cart2"></i>
+                </button>
+                <button class="viewDetailsBtn" data-title="Cappuccino" data-image="../Real_Assignment/Images/product-1.jpg"
+                    data-description="Cappuccino is a coffee drink made with equal parts espresso, steamed milk, and milk foam. It’s rich, and smooth."
+                    data-tastenotes="Bold,Balanced,Creamy,Roasty" data-brewingmethods="Nespresso Machine,Espresso Machine"
+                    data-price="$4.50"> View Details
+                </button>
+            </div>
+        </div>
+        <div class="smallCard">
+            <div class="img"><img src="../Real_Assignment/Images/Cappuccino.jpg" alt="Latte"></div>
+            <div class="UndersmallCard">
+                <h2>Latte</h2>
+            </div>
+            <div class="priceAndAddToCart">
+                <div class="price">
+                    <h3>$4.75</h3>
+                </div>
+                <button class="addToCart"
+                    data-id="coffee-latte"
+                    data-name="Latte"
+                    data-price="4.75"
+                    data-image="../Real_Assignment/Images/Cappuccino.jpg">
+                    <i class="bi bi-cart2"></i>
+                </button>
+                <button class="viewDetailsBtn" data-title="Latte" data-image="../Real_Assignment/Images/Cappuccino.jpg"
+                    data-description="Latte is a smooth coffee drink made with one shot of espresso and more steamed milk, topped with a small amount of milk foam."
+                    data-tastenotes="Mild,Mellow,Silky,Miky" data-brewingmethods="Nespresso Machine,Moka Pot"
+                    data-price="$4.75"> View Details
+                </button>
+            </div>
+        </div>
+        <div class="smallCard">
+            <div class="img"><img src="../Real_Assignment/Images/product-3.jpg" alt="Brew"></div>
+            <div class="UndersmallCard">
+                <h2>Brew</h2>
+            </div>
+            <div class="priceAndAddToCart">
+                <div class="price">
+                    <h3>$3.99</h3>
+                </div>
+                <button class="addToCart"
+                    data-id="coffee-brew"
+                    data-name="Brew"
+                    data-price="3.99"
+                    data-image="../Real_Assignment/Images/product-3.jpg">
+                    <i class="bi bi-cart2"></i>
+                </button>
+                <button class="viewDetailsBtn" data-title="Brew" data-image="../Real_Assignment/Images/product-3.jpg"
+                    data-description="Brew coffee is made by slowly dripping hot water over ground coffee, creating a clean and balanced cup."
+                    data-tastenotes="Earthy,Smooth,Light,Clean" data-brewingmethods="Drip Coffee Maker,French Press"
+                    data-price="$3.99"> View Details
+                </button>
+            </div>
+        </div>
+        <div class="smallCard">
+            <div class="img"><img src="../Real_Assignment/Images/product-4.jpg" alt="Black Coffee"></div>
+            <div class="UndersmallCard">
+                <h2>Black Coffee</h2>
+            </div>
+            <div class="priceAndAddToCart">
+                <div class="price">
+                    <h3>$3.75</h3>
+                </div>
+                <button class="addToCart"
+                    data-id="coffee-black"
+                    data-name="Black Coffee"
+                    data-price="3.75"
+                    data-image="../Real_Assignment/Images/product-4.jpg">
+                    <i class="bi bi-cart2"></i>
+                </button>
+                <button class="viewDetailsBtn" data-title="Black Coffee"
+                    data-image="../Real_Assignment/Images/product-4.jpg"
+                    data-description="Black coffee is a simple yet potent brew, made without milk or sugar, offering a direct and intense coffee experience."
+                    data-tastenotes="Bold,Strong,Bitter" data-brewingmethods="French Press,Espresso Machine"
+                    data-price="$3.75"> View Details
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="toProducts"><a href="CoffeeSelection.html">Beans</a></h1>
+    <div class="menuGrid">
+        <div class="smallCard">
+            <div class="img"><img src="../Real_Assignment/Images/Beans-1.jpg" alt="Catte Beans"></div>
+            <div class="UndersmallCard">
+                <h2>Catte</h2>
+            </div>
+            <div class="priceAndAddToCart">
+                <div class="price">
+                    <h3>$12.99</h3>
+                </div>
+                <button class="addToCart"
+                    data-id="bean-catte"
+                    data-name="Catte"
+                    data-price="12.99"
+                    data-image="../Real_Assignment/Images/Beans-1.jpg">
+                    <i class="bi bi-cart2"></i>
+                </button>
+                <button class="viewDetailsBtn" data-title="Catte" data-image="../Real_Assignment/Images/Beans-1.jpg"
+                    data-description="Catte coffee beans offer a unique and rich flavor, often associated with a bold profile and distinct aroma."
+                    data-tastenotes="Bold,Balanced,Creamy,Roasty" data-brewingmethods="Nespresso Machine,Espresso Machine"
+                    data-price="$12.99"> View Details
+                </button>
+            </div>
+        </div>
+        <div class="smallCard">
+            <div class="img"><img src="../Real_Assignment/Images/Beans-2.jpg" alt="Natural Bean"></div>
+            <div class="UndersmallCard">
+                <h2>Natural Bean</h2>
+            </div>
+            <div class="priceAndAddToCart">
+                <div class="price">
+                    <h3>$14.50</h3>
+                </div>
+                <button class="addToCart"
+                    data-id="bean-natural"
+                    data-name="Natural Bean"
+                    data-price="14.50"
+                    data-image="../Real_Assignment/Images/Beans-2.jpg">
+                    <i class="bi bi-cart2"></i>
+                </button>
+                <button class="viewDetailsBtn" data-title="Natural Bean" data-image="../Real_Assignment/Images/Beans-2.jpg"
+                    data-description="Natural process coffee beans are dried with the fruit still intact, resulting in a sweet, fruity, and full-bodied cup."
+                    data-tastenotes="Earthy,Bitter,Clean" data-brewingmethods="Nespresso Machine,Moka Pot"
+                    data-price="$14.50"> View Details
+                </button>
+            </div>
+        </div>
+        <div class="smallCard">
+            <div class="img"><img src="../Real_Assignment/Images/Beans-3.jpg" alt="En Casa Beans"></div>
+            <div class="UndersmallCard">
+                <h2>En Casa</h2>
+            </div>
+            <div class="priceAndAddToCart">
+                <div class="price">
+                    <h3>$11.99</h3>
+                </div>
+                <button class="addToCart"
+                    data-id="bean-encasa"
+                    data-name="En Casa"
+                    data-price="11.99"
+                    data-image="../Real_Assignment/Images/Beans-3.jpg">
+                    <i class="bi bi-cart2"></i>
+                </button>
+                <button class="viewDetailsBtn" data-title="En Casa" data-image="../Real_Assignment/Images/Beans-3.jpg"
+                    data-description="En Casa blend offers a delightful and comforting coffee experience, perfect for enjoying at home any time of day."
+                    data-tastenotes="Earthy,Smooth,Light,Clean" data-brewingmethods="Drip Coffee Maker,French Press"
+                    data-price="$11.99"> View Details
+                </button>
+            </div>
+        </div>
+        <div class="smallCard">
+            <div class="img"><img src="../Real_Assignment/Images/Beans-4.jpg" alt="LGC Beans"></div>
+            <div class="UndersmallCard">
+                <h2>LGC</h2>
+            </div>
+            <div class="priceAndAddToCart">
+                <div class="price">
+                    <h3>$13.75</h3>
+                </div>
+                <button class="addToCart"
+                    data-id="bean-lgc"
+                    data-name="LGC"
+                    data-price="13.75"
+                    data-image="../Real_Assignment/Images/Beans-4.jpg">
+                    <i class="bi bi-cart2"></i>
+                </button>
+                <button class="viewDetailsBtn" data-title="LGC" data-image="../Real_Assignment/Images/Beans-4.jpg"
+                    data-description="LGC coffee delivers a powerful and robust flavor, ideal for those who prefer a strong and invigorating cup."
+                    data-tastenotes="Bold,Strong,Bitter" data-brewingmethods="French Press,Espresso Machine"
+                    data-price="$13.75"> View Details
+                </button>
+            </div>
+        </div>
+
+        <div class="smallCard">
+            <div class="img"><img src="../Real_Assignment/Images/Beans-5.webp" alt="Long Story Beans"></div>
+            <div class="UndersmallCard">
+                <h2>Long Story</h2>
+            </div>
+            <div class="priceAndAddToCart">
+                <div class="price">
+                    <h3>$15.25</h3>
+                </div>
+                <button class="addToCart"
+                    data-id="bean-longstory"
+                    data-name="Long Story"
+                    data-price="15.25"
+                    data-image="../Real_Assignment/Images/Beans-5.webp">
+                    <i class="bi bi-cart2"></i>
+                </button>
+                <button class="viewDetailsBtn" data-title="Long Story" data-image="../Real_Assignment/Images/Beans-5.webp"
+                    data-description="Long Story coffee offers a complex and evolving flavor profile, revealing new notes with every sip, making for a truly memorable experience."
+                    data-tastenotes="Bold,Balanced,Roasty" data-brewingmethods="Nespresso Machine,Espresso Machine"
+                    data-price="$15.25"> View Details
+                </button>
+            </div>
+        </div>
+        <div class="smallCard">
+            <div class="img"><img src="../Real_Assignment/Images/Beans-6.webp" alt="Flip Coffee Beans"></div>
+            <div class="UndersmallCard">
+                <h2>Flip Coffee</h2>
+            </div>
+            <div class="priceAndAddToCart">
+                <div class="price">
+                    <h3>$10.99</h3>
+                </div>
+                <button class="addToCart"
+                    data-id="bean-flipcoffee"
+                    data-name="Flip Coffee"
+                    data-price="10.99"
+                    data-image="../Real_Assignment/Images/Beans-6.webp">
+                    <i class="bi bi-cart2"></i>
+                </button>
+                <button class="viewDetailsBtn" data-title="Flip Coffee" data-image="../Real_Assignment/Images/Beans-6.webp"
+                    data-description="Flip Coffee offers a versatile and easy-to-brew option, perfect for a quick and satisfying cup anytime."
+                    data-tastenotes="Mild,Mellow,Balanced,Roasty" data-brewingmethods="Nespresso Machine,Moka Pot"
+                    data-price="$10.99"> View Details
+                </button>
+            </div>
+        </div>
+        <div class="smallCard">
+            <div class="img"><img src="../Real_Assignment/Images/Beans-7.webp" alt="The Drew Beans"></div>
+            <div class="UndersmallCard">
+                <h2>The Drew</h2>
+            </div>
+            <div class="priceAndAddToCart">
+                <div class="price">
+                    <h3>$16.00</h3>
+                </div>
+                <button class="addToCart"
+                    data-id="bean-thedrew"
+                    data-name="The Drew"
+                    data-price="16.00"
+                    data-image="../Real_Assignment/Images/Beans-7.webp">
+                    <i class="bi bi-cart2"></i>
+                </button>
+                <button class="viewDetailsBtn" data-title="The Drew" data-image="../Real_Assignment/Images/Beans-7.webp"
+                    data-description="The Drew blend is a meticulously crafted coffee, known for its consistent quality and delightful taste, making it a favorite among connoisseurs."
+                    data-tastenotes="Earthy,Smooth,Light,Clean" data-brewingmethods="Drip Coffee Maker,French Press"
+                    data-price="$16.00"> View Details
+                </button>
+            </div>
+        </div>
+        <div class="smallCard">
+            <div class="img"><img src="../Real_Assignment/Images/Beans-8.webp" alt="Coffee Bag"></div>
+            <div class="UndersmallCard">
+                <h2>Coffee Bag</h2>
+            </div>
+            <div class="priceAndAddToCart">
+                <div class="price">
+                    <h3>$9.50</h3>
+                </div>
+                <button class="addToCart"
+                    data-id="bean-coffeebag"
+                    data-name="Coffee Bag"
+                    data-price="9.50"
+                    data-image="../Real_Assignment/Images/Beans-8.webp">
+                    <i class="bi bi-cart2"></i>
+                </button>
+                <button class="viewDetailsBtn" data-title="Coffee Bag" data-image="../Real_Assignment/Images/Beans-8.webp"
+                    data-description="Our signature coffee bag contains premium beans, roasted to perfection, offering a fresh and aromatic brew every time."
+                    data-tastenotes="Bold,Strong,Bitter" data-brewingmethods="French Press,Espresso Machine"
+                    data-price="$9.50"> View Details
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+       <footer>
+        <div class="footerContainer">
+            <div class="footerSection">
+                <h4>Get in touch</h4>
+
+                <ul>
+                    <li>YourCoffee@gmail.com</li>
+                    <li>YourCoffeeService@gmail.com</li>
+                    <li>YourCoffeeBusiness@gmail.com</li>
+                </ul>
+            </div>
+            <div class="footerSection">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><a href="#"><i class="bi bi-facebook"></i><span class="span">Facebook</span></a></li>
+                    <li><a href="#"><i class="bi bi-telegram"></i><span class="span">Google</span></a></li>
+                    <li><a href="#"><i class="bi bi-whatsapp"></i><span class="span">Twitter</span></a></li>
+                    <li><a href="#"><i class="bi bi-line"></i><span class="span">What'up</span></a></li>
+                </ul>
+            </div>
+            <div class="footerSection">
+                <h4>Address</h4>
+                <ul>
+                    <li><a href="#">Mandalay</a></li>
+                    <li><a href="#">Yangon</a></li>
+                    <li><a href="#">Pyi Oo Lwin</a></li>
+                    <li><a href="#">Taunggyi</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <div class="coffee-modal-overlay">
+        <div class="coffee-modal-content">
+            <span class="close-coffee-modal-button">&times;</span>
+            <div class="modal-img-wrapper">
+                <img id="coffeeModalImage" src="#" alt="Coffee Image" class="modal-img">
+            </div>
+            <div class="modal-text-wrapper">
+                <h2 id="coffeeModalTitle">.</h2>
+                <p id="coffeeModalDescription">.</p>
+                <h4>Taste Notes:</h4>
+                <ul id="coffeeModalTestingNotes">
+                </ul>
+                <h4>Recommended Brewing Methods:</h4>
+                <ul id="coffeeModalBrewingMethods">
+                </ul>
+                <div class="modal-price-container">
+                    <h3 id="coffeeModalPrice">.</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="JS/java.js"></script>
+
+</body>
+</html>

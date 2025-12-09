@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Bean Boutique</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <h1 class="logo">Bean Boutique</h1>
+        <nav class="navbarSection">
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li class="storeMenu">
+                    <a href="Store.html">Store</a>
+                    <ul class="submenu">
+                        <li><a href="CoffeeSelection.html">Coffee Selection</a></li>
+                        <li><a href="Equipments.html">Equipment</a></li>
+                    </ul>
+                </li>
+                <li><a href="event.html">Events</a></li>
+                <li><a href="specialoffers.html">Special Offers and Subscriptions</a></li>
+                <li><a href="realcart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+    <main class="container">
+        <h1>Your Shopping Cart</h1>
+
+        <div class="cart-container">
+            <div class="cart-items" id="cartItems">
+            </div>
+
+
+            <div class="empty-cart" id="emptyCart">
+                <i class="fas fa-coffee"></i>
+                <h2>Your cart is empty</h2>
+                <p>Looks like you haven't added anything to your cart yet</p>
+                <a href="CoffeeSelection.html" class="btn">Browse Coffee Selection</a>
+            </div>
+
+
+            <div class="cart-summary" id="cartSummary" style="display: none;">
+                <h2>Order Summary</h2>
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span id="subtotal">$0.00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Shipping</span>
+                    <span id="shipping">$5.00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Tax</span>
+                    <span id="tax">$0.00</span>
+                </div>
+                <div class="summary-total">
+                    <span>Total</span>
+                    <span id="total">$0.00</span>
+                </div>
+                <button class="checkout-btn" id="checkoutBtn">Proceed to Checkout</button>
+                <a href="CoffeeSelection.html" class="continue-shopping">
+                    <i class="fas fa-arrow-left"></i> Continue Shopping for Coffee
+                </a>
+                <a href="Equipments.html" class="continue-shopping">
+                    <i class="fas fa-arrow-left"></i> Continue Shopping for Equipments
+                </a>
+            </div>
+        </div>
+    </main>
+
+
+       <footer>
+        <div class="footerContainer">
+            <div class="footerSection">
+                <h4>Get in touch</h4>
+
+                <ul>
+                    <li>YourCoffee@gmail.com</li>
+                    <li>YourCoffeeService@gmail.com</li>
+                    <li>YourCoffeeBusiness@gmail.com</li>
+                </ul>
+            </div>
+            <div class="footerSection">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><a href="#"><i class="bi bi-facebook"></i><span class="span">Facebook</span></a></li>
+                    <li><a href="#"><i class="bi bi-telegram"></i><span class="span">Google</span></a></li>
+                    <li><a href="#"><i class="bi bi-whatsapp"></i><span class="span">Twitter</span></a></li>
+                    <li><a href="#"><i class="bi bi-line"></i><span class="span">What'up</span></a></li>
+                </ul>
+            </div>
+            <div class="footerSection">
+                <h4>Address</h4>
+                <ul>
+                    <li><a href="#">Mandalay</a></li>
+                    <li><a href="#">Yangon</a></li>
+                    <li><a href="#">Pyi Oo Lwin</a></li>
+                    <li><a href="#">Taunggyi</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Bootstrap Bundle with Popper (Plugin 3) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="JS/java.js"></script>
+</body>
+
+</html>
